@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Community Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Join Our Tech Community</h1>
+
+    <form id="registrationForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" required />
+
+      <label for="phone">Phone Number</label>
+     <input type="tel" id="phone"  maxlength="10" required />
+
+      <label for="email">Email ID</label>
+      <input type="email" id="email" required />
+
+      <label for="college">College / Department</label>
+      <input type="text" id="college" required />
+
+      <button type="button" id="shareBtn">📲 Share on WhatsApp</button>
+      <p id="clickCounter">Click count: 0/5</p>
+
+      <label for="screenshot">Upload Screenshot</label>
+      <input type="file" id="screenshot" accept="image/*" required />
+
+      <button type="submit" id="submitBtn">✅ Submit Registration</button>
+    </form>
+
+    <p id="confirmationMessage"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
